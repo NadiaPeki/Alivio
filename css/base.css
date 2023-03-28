@@ -1,0 +1,53 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color:#484848;
+    /* min-width: 1400px;*/
+}
+
+@media (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }   
+}
+
+/* Utility*/
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+/* Grid*/
+
+.container {
+    width: 1400px;  /*мы определили, что контейнер у нас 1370, но у контейнера будут поля, чтобы контент не прилегал вплотную к краям экрана. увелич ширину на 30 (15 и 15 паддинги)*/
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto; /* задаем марджин лефт и райт ауто, чтобы контейнер разместить по центру*/
+    margin-right: auto;
+}
+
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
